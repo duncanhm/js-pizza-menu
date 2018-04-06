@@ -72,14 +72,179 @@ header {
 }
 
 /*=======================================
+  MENU STYLES
+  =======================================*/
+
+#menu-all {
+	width: 650px;
+	margin: 0% auto;
+	padding: 1px 0px;
+}
+
+#form {
+	margin: 0% auto;
+	width: 600px;
+	border-radius: 25px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.menu-item {
+	flex: 1 150px;
+	min-width: 0;
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 2px rgba(0,0,0, .3);
+    padding: 0 0 10px 0;
+	margin: 3px;
+	border-radius: 1px;
+}
+
+.menu-item:nth-child(even) {
+	background-color: rgba(244, 245, 247, 0.9);
+}
+
+.menu-item:nth-child(odd) {
+	background-color: rgba(234, 235, 237, 0.9);
+}
+
+.menu-item>h3 {
+	color: #fff;
+	padding: 0 0 0 60px;
+	margin: 0 auto;
+	background-color: rgb(240, 31, 20, .8);
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+}
+
+/*=======================================
+  BUTTON STYLES
+  =======================================*/
+
+.controls {
+	display: flex;
+    flex-direction: columns;
+    justify-content: space-between;
+	margin: 10px auto 30px;
+	width: 450px;
+}
+
+.controls>.button {
+	flex: 1 150px;
+}
+
+.button {
+	cursor: pointer;
+	color: #fff;
+	width: 100%;
+	display: block;
+	text-decoration: none;
+	background-color: rgba(42, 76, 132, .9);
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+	border-radius: 1px;
+	margin: 1% 3px;
+	padding: .1px 0 .1px 0px;
+    font: 18px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 2px rgba(0,0,0,.3);
+	transition-property: transform background, box-shadow, color;
+	transition-duration: .3s, .5s, .2s;
+	transition-timing-function: eas-in-out;
+}
+
+.button>p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.button:hover {
+	font: 18px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(240, 31, 20, .7);
+	box-shadow: 0 0 0 2px rgba(0,0,0,.3);
+}
+
+/*=======================================
+  CART STYLES
+  =======================================*/
+
+#cart {
+	opacity: ;
+	margin: 15px auto;
+	width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 3px solid #fff;
+	box-shadow: 0 0 0 2px rgba(0,0,0,.3);
+	border-radius: 1px;
+}
+
+#head1 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgb(240, 31, 20, .8);
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+}
+
+#head2 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgb(240, 31, 20, .8);
+	text-shadow: 1.5px 1.5px 5px #000, 1px 1px 5px #000;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+/*=======================================
   FOOTER STYLES
   =======================================*/
 footer {
-    position: fixed;
+    position:;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(255, 255, 255,.6);
+	background-color: rgba(255, 255, 255,.7);
     color: #000;
 	text-align: center;
     padding: 15px 0px;
