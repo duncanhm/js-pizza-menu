@@ -4,23 +4,83 @@
 ==================================================
     GENERIC STYLES
 ==================================================*/
-html {
-	
+head {
+    display: none;
 }
 
 body {
-	background: url(../img/pizzeria.jpeg) no-repeat fixed right top;
+	display: block;
+	margin: 7px;
+	font-size: 16px;
+	font-family: "Times New Roman", Times, serif;
+	background: url(../img/pizzeria.jpeg) no-repeat center fixed;
 }
 
+h1 {
+	font-weight: 900;
+	font-size: 30px;
+	font-variant: small-caps;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
 
+h1::after {  /* This is the underline */
+	display: block;
+	content: "";
+	height: 2px;
+	width: 115px;
+	background: #fff;
+	margin: 5px auto 25px;
+	box-shadow: 5px 2px 3px rgba(0,0,0,0.5);
+}
+
+.container {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*=======================================
+  TITLE STYLES
+  =======================================*/
+header {
+	width: 100%;
+	height: auto;
+	display: block;
+	color: #fff;
+}
+
+.head-main {
+	text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+	font-variant: small-caps;
+	letter-spacing: 5pt;
+	word-spacing: 21pt;
+	font-size: 3.5em;
+	text-align: left;
+	line-height: 2;
+    font-weight: 900;
+    border: 5px double #fff;
+    padding: 10px;
+}
 
 /*=======================================
   FOOTER STYLES
   =======================================*/
-#footer {
-    background-color: rgba(100,65,0,.3);
+footer {
+    position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255,.6);
     color: #000;
-	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
-    padding: 20px 50px 20px 50px;
-    text-align: center;
+	text-align: center;
+    padding: 15px 0px;
 }
