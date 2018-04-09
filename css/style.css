@@ -10,7 +10,7 @@ head {
 
 body {
 	display: block;
-	margin: 7px;
+	margin: 0;
 	font-size: 16px;
 	font-family: "Times New Roman", Times, serif;
 	background: url(../img/pizzeria.jpeg) no-repeat center fixed;
@@ -100,13 +100,6 @@ header {
     padding: 0 0 10px 0;
 	margin: 3px;
 	border-radius: 1px;
-}
-
-.menu-item:nth-child(even) {
-	background-color: rgba(244, 245, 247, 0.9);
-}
-
-.menu-item:nth-child(odd) {
 	background-color: rgba(234, 235, 237, 0.9);
 }
 
@@ -171,7 +164,7 @@ header {
   =======================================*/
 
 #cart {
-	opacity: ;
+	opacity: 0;
 	margin: 15px auto;
 	width: 650px;
     display: flex;
@@ -223,9 +216,9 @@ header {
 
 #totalPrice1 {
 	flex: 1 250px;
-	padding: 0 0 10px 10px;
 	width: 250px;
 	border-radius: 0 0 0 0;
+	text-align: right;
 }
 
 #totalPrice2 {
@@ -240,12 +233,13 @@ header {
   FOOTER STYLES
   =======================================*/
 footer {
-    position:;
-	left: 0;
+	margin-top: 1.5rem;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(255, 255, 255,.7);
-    color: #000;
+	left: 0;
+	padding: 1rem;
+	color: #000;
+	background-color: rgba(255, 255, 255,.8);
 	text-align: center;
-    padding: 15px 0px;
+	font-size: 17px;
 }
