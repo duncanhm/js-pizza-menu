@@ -147,7 +147,3 @@ function clearAll() {
 	document.getElementById("form").reset();
 	document.getElementById("cart").style.opacity=0;
 };
-
-
-
-
